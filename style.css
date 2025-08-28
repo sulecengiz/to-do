@@ -1,244 +1,391 @@
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            position: relative;
-            overflow: hidden;
-            min-height: 100vh;
+       html,
+       body,
+       div,
+       span,
+       applet,
+       object,
+       iframe,
+       h1,
+       h2,
+       h3,
+       h4,
+       h5,
+       h6,
+       p,
+       blockquote,
+       pre,
+       a,
+       abbr,
+       acronym,
+       address,
+       big,
+       cite,
+       code,
+       del,
+       dfn,
+       img,
+       ins,
+       kbd,
+       q,
+       s,
+       samp,
+       small,
+       strike,
+       sub,
+       sup,
+       tt,
+       var,
+       dl,
+       dt,
+       dd,
+       ol,
+       ul,
+       li,
+       fieldset,
+       form,
+       label,
+       legend,
+       input,
+       select,
+       textarea,
+       button,
+       table,
+       caption,
+       tbody,
+       tfoot,
+       thead,
+       tr,
+       th,
+       td,
+       article,
+       aside,
+       canvas,
+       details,
+       embed,
+       figure,
+       figcaption,
+       footer,
+       header,
+       hgroup,
+       menu,
+       nav,
+       output,
+       ruby,
+       section,
+       summary,
+       time,
+       mark,
+       audio,
+       video {
+           margin: 0;
+           padding: 0;
+           border: 0;
+           font-size: 100%;
+           font: inherit;
+           vertical-align: baseline;
+       }
 
-        }
+       article,
+       aside,
+       details,
+       figcaption,
+       figure,
+       footer,
+       header,
+       hgroup,
+       menu,
+       nav,
+       section {
+           display: block;
+       }
 
-        .my-3 ul.list-group {
-            max-height: 300px;
-            overflow-y: auto;
-            scroll-behavior: smooth;
-        }
+       body {
+           line-height: 1;
+       }
 
-        .my-3 ul.list-group::-webkit-scrollbar {
-            width: 8px;
-        }
+       ol,
+       ul {
+           list-style: none;
+       }
 
-        .my-3 ul.list-group::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 5px;
-        }
+       blockquote,
+       q {
+           quotes: none;
+       }
 
-        .my-3 ul.list-group::-webkit-scrollbar-thumb {
-            background-color: rgba(149, 170, 228, 0.7);
-            border-radius: 5px;
-            border: 1px solid rgba(149, 170, 228, 0.5);
-        }
+       blockquote:before,
+       blockquote:after,
+       q:before,
+       q:after {
+           content: '';
+           content: none;
+       }
 
-        .my-3 ul.list-group {
-            scrollbar-width: thin;
-            scrollbar-color: rgba(149, 170, 228, 0.7) rgba(255, 255, 255, 0.3);
-        }
+       table {
+           border-collapse: collapse;
+           border-spacing: 0;
+       }
 
-        .my-3 ul.list-group {
-            max-height: 300px;
-            overflow-y: auto;
-        }
+       a {
+           text-decoration: none;
+       }
 
-        .my-3 ul.list-group li {
-            min-height: 40px;
+       a img,
+       :link img,
+       :visited img {
+           border: 0;
+       }
 
-        }
+       :focus {
+           outline: 0;
+       }
 
+       .clear {
+           clear: both;
+       }
 
-        .title {
-            font-family: "Story Script", sans-serif;
-            font-weight: bolder;
-            font-size: 80px;
-            font-style: normal;
-            color: #181768cb;
-            text-align: center;
-            margin-top: 1%;
-        }
+       body {
+           margin: 0;
+           padding: 0;
+           font-family: Arial, sans-serif;
+           background-color: #ffffff;
+           position: relative;
+           overflow: hidden;
+           min-height: 100vh;
 
-        .background-aura {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            pointer-events: none;
-        }
+       }
 
-        .aura-circle {
-            position: absolute;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(174, 188, 252, 0.692) 0%, transparent 70%);
-            animation: moveAura linear infinite;
-        }
+       .my-3 ul.list-group {
+           max-height: 300px;
+           overflow-y: auto;
+           scroll-behavior: smooth;
+       }
 
-        .aura-circle2 {
-            position: absolute;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(225, 194, 245, 0.692) 0%, transparent 70%);
-            animation: moveAura linear infinite;
-        }
+       .my-3 ul.list-group::-webkit-scrollbar {
+           width: 8px;
+       }
 
-        .circle1 {
-            width: 650px;
-            height: 650px;
-            top: -5%;
-            left: -10%;
-            animation-duration: 5s;
-        }
+       .my-3 ul.list-group::-webkit-scrollbar-track {
+           background: rgba(255, 255, 255, 0.3);
+           border-radius: 5px;
+       }
 
-        .circle2 {
-            width: 550px;
-            height: 550px;
-            top: 5%;
-            left: 40%;
-            animation-duration: 5s;
-        }
+       .my-3 ul.list-group::-webkit-scrollbar-thumb {
+           background-color: rgba(149, 170, 228, 0.7);
+           border-radius: 5px;
+           border: 1px solid rgba(149, 170, 228, 0.5);
+       }
 
-        .circle3 {
-            width: 550px;
-            height: 550px;
-            top: 5%;
-            left: 75%;
-            animation-duration: 8s;
-        }
+       .my-3 ul.list-group {
+           scrollbar-width: thin;
+           scrollbar-color: rgba(149, 170, 228, 0.7) rgba(255, 255, 255, 0.3);
+       }
 
-        .circle4 {
-            width: 550px;
-            height: 550px;
-            top: 30%;
-            left: 5%;
-            animation-duration: 8s;
-        }
+       .my-3 ul.list-group {
+           max-height: 300px;
+           overflow-y: auto;
+       }
 
-        .circle5 {
-            width: 550px;
-            height: 550px;
-            top: 30%;
-            left: 40%;
-            animation-duration: 5s;
-        }
+       .my-3 ul.list-group li {
+           min-height: 40px;
 
-        .circle6 {
-            width: 600px;
-            height: 600px;
-            top: 30%;
-            left: 75%;
-            animation-duration: 8s;
-        }
-
-        .circle7 {
-            width: 550px;
-            height: 550px;
-            top: 60%;
-            left: 5%;
-            animation-duration: 6s;
-        }
-
-        .circle8 {
-            width: 550px;
-            height: 550px;
-            top: 0%;
-            left: -10%;
-            animation-duration: 8s;
-        }
-
-        .circle9 {
-            width: 550px;
-            height: 550px;
-            top: 20%;
-            left: 75%;
-            animation-duration: 5s;
-        }
-
-        .circle10 {
-            width: 550px;
-            height: 550px;
-            top: 55%;
-            left: 5%;
-            animation-duration: 15s;
-        }
-
-        .circle11 {
-            width: 750px;
-            height: 750px;
-            top: 85%;
-            left: 40%;
-            animation-duration: 15s;
-        }
-
-        .circle12 {
-            width: 750px;
-            height: 750px;
-            top: 85%;
-            left: 75%;
-            animation-duration: 5s;
-        }
-
-        .circle13 {
-            width: 750px;
-            height: 750px;
-            top: -20%;
-            left: 40%;
-            animation-duration: 5s;
-        }
+       }
 
 
-        @keyframes moveAura {
-            0% {
-                transform: translate(0, 0) scale(1);
-            }
+       .title {
+           font-family: "Story Script", sans-serif;
+           font-weight: bolder;
+           font-size: 80px;
+           font-style: normal;
+           color: #181768cb;
+           text-align: center;
+           margin-top: 1%;
+       }
 
-            50% {
-                transform: translate(200px, 150px) scale(1.3);
-            }
+       .background-aura {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           z-index: 0;
+           pointer-events: none;
+       }
 
-            100% {
-                transform: translate(0, 0) scale(1);
-            }
-        }
+       .aura-circle {
+           position: absolute;
+           border-radius: 50%;
+           background: radial-gradient(circle, rgba(174, 188, 252, 0.692) 0%, transparent 70%);
+           animation: moveAura linear infinite;
+       }
 
-        .card {
-            position: relative;
-            z-index: 1;
-            border-color: rgba(14, 14, 184, 0.349);
-        }
+       .aura-circle2 {
+           position: absolute;
+           border-radius: 50%;
+           background: radial-gradient(circle, rgba(225, 194, 245, 0.692) 0%, transparent 70%);
+           animation: moveAura linear infinite;
+       }
 
-        .btn:hover {
-            background-color: rgba(0, 31, 117, 0.541) !important;
-            color: #ffffff;
-        }
+       .circle1 {
+           width: 650px;
+           height: 650px;
+           top: -5%;
+           left: -10%;
+           animation-duration: 5s;
+       }
 
-        .alert {
-            align-content: center;
-        }
+       .circle2 {
+           width: 550px;
+           height: 550px;
+           top: 5%;
+           left: 40%;
+           animation-duration: 5s;
+       }
 
-        h5 {
-            font-weight: bold;
-            color: rgba(0, 0, 51, 0.788);
-        }
+       .circle3 {
+           width: 550px;
+           height: 550px;
+           top: 5%;
+           left: 75%;
+           animation-duration: 8s;
+       }
 
-        @media only screen and (max-width: 768px) {
-            .card {
-                display: flex;
-                flex-direction: column;
-                height: 100vh;
-                /* her telefonda tam ekran */
-            }
+       .circle4 {
+           width: 550px;
+           height: 550px;
+           top: 30%;
+           left: 5%;
+           animation-duration: 8s;
+       }
 
-            .my-3 {
-                flex: 1;
-                /* kalan alanı kapla */
-                overflow-y: auto;
-                /* liste uzarsa kaydırma çıksın */
-            }
+       .circle5 {
+           width: 550px;
+           height: 550px;
+           top: 30%;
+           left: 40%;
+           animation-duration: 5s;
+       }
 
-            .my-3 ul.list-group li {
-                padding: 12px;
-                font-size: 1rem;
-                word-wrap: break-word;
-                /* taşan yazıyı kır */
-            }
+       .circle6 {
+           width: 600px;
+           height: 600px;
+           top: 30%;
+           left: 75%;
+           animation-duration: 8s;
+       }
 
-        }
+       .circle7 {
+           width: 550px;
+           height: 550px;
+           top: 60%;
+           left: 5%;
+           animation-duration: 6s;
+       }
+
+       .circle8 {
+           width: 550px;
+           height: 550px;
+           top: 0%;
+           left: -10%;
+           animation-duration: 8s;
+       }
+
+       .circle9 {
+           width: 550px;
+           height: 550px;
+           top: 20%;
+           left: 75%;
+           animation-duration: 5s;
+       }
+
+       .circle10 {
+           width: 550px;
+           height: 550px;
+           top: 55%;
+           left: 5%;
+           animation-duration: 15s;
+       }
+
+       .circle11 {
+           width: 750px;
+           height: 750px;
+           top: 85%;
+           left: 40%;
+           animation-duration: 15s;
+       }
+
+       .circle12 {
+           width: 750px;
+           height: 750px;
+           top: 85%;
+           left: 75%;
+           animation-duration: 5s;
+       }
+
+       .circle13 {
+           width: 750px;
+           height: 750px;
+           top: -20%;
+           left: 40%;
+           animation-duration: 5s;
+       }
+
+
+       @keyframes moveAura {
+           0% {
+               transform: translate(0, 0) scale(1);
+           }
+
+           50% {
+               transform: translate(200px, 150px) scale(1.3);
+           }
+
+           100% {
+               transform: translate(0, 0) scale(1);
+           }
+       }
+
+       .card {
+           position: relative;
+           z-index: 1;
+           border-color: rgba(14, 14, 184, 0.349);
+       }
+
+       .btn:hover {
+           background-color: rgba(0, 31, 117, 0.541) !important;
+           color: #ffffff;
+       }
+
+       .alert {
+           align-content: center;
+       }
+
+       h5 {
+           font-weight: bold;
+           color: rgba(0, 0, 51, 0.788);
+       }
+
+       @media only screen and (max-width: 768px) {
+           .card {
+               margin-top: 1rem;
+               display: flex;
+               flex-direction: column;
+               min-height: 65vh;
+
+           }
+
+           .my-3 {
+               flex: 1;
+
+               overflow-y: auto;
+
+           }
+
+           .my-3 ul.list-group li {
+               padding: 12px;
+               font-size: 1rem;
+               word-wrap: break-word;
+
+           }
+
+       }
