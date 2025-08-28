@@ -6,6 +6,54 @@
             position: relative;
             overflow: hidden;
             min-height: 100vh;
+
+        }
+
+        .my-3 ul.list-group {
+            max-height: 300px;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+
+        .my-3 ul.list-group::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .my-3 ul.list-group::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        .my-3 ul.list-group::-webkit-scrollbar-thumb {
+            background-color: rgba(149, 170, 228, 0.7);
+            border-radius: 5px;
+            border: 1px solid rgba(149, 170, 228, 0.5);
+        }
+
+        .my-3 ul.list-group {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(149, 170, 228, 0.7) rgba(255, 255, 255, 0.3);
+        }
+
+        .my-3 ul.list-group {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .my-3 ul.list-group li {
+            min-height: 40px;
+
+        }
+
+
+        .title {
+            font-family: "Story Script", sans-serif;
+            font-weight: bolder;
+            font-size: 80px;
+            font-style: normal;
+            color: #181768cb;
+            text-align: center;
+            margin-top: 1%;
         }
 
         .background-aura {
@@ -25,61 +73,117 @@
             animation: moveAura linear infinite;
         }
 
+        .aura-circle2 {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(225, 194, 245, 0.692) 0%, transparent 70%);
+            animation: moveAura linear infinite;
+        }
+
         .circle1 {
-            width: 550px;
-            height: 550px;
-            top: 10%;
-            left: 20%;
-            animation-duration: 10s;
+            width: 650px;
+            height: 650px;
+            top: -5%;
+            left: -10%;
+            animation-duration: 5s;
         }
 
         .circle2 {
             width: 550px;
             height: 550px;
-            top: 0%;
-            left: 0%;
-            animation-duration: 15s;
+            top: 5%;
+            left: 40%;
+            animation-duration: 5s;
         }
 
         .circle3 {
             width: 550px;
             height: 550px;
-            top: 30%;
-            left: 70%;
-            animation-duration: 18s;
+            top: 5%;
+            left: 75%;
+            animation-duration: 8s;
         }
 
         .circle4 {
             width: 550px;
             height: 550px;
-            top: 0%;
-            left: 50%;
-            animation-duration: 12s;
+            top: 30%;
+            left: 5%;
+            animation-duration: 8s;
         }
 
         .circle5 {
             width: 550px;
             height: 550px;
-            top: 60%;
-            left: 0%;
+            top: 30%;
+            left: 40%;
             animation-duration: 5s;
         }
 
         .circle6 {
             width: 600px;
             height: 600px;
-            top: 0%;
-            left: 0%;
-            animation-duration: 18s;
+            top: 30%;
+            left: 75%;
+            animation-duration: 8s;
         }
 
         .circle7 {
             width: 550px;
             height: 550px;
-            top: 100%;
-            left: 0%;
-            animation-duration: 10s;
+            top: 60%;
+            left: 5%;
+            animation-duration: 6s;
         }
+
+        .circle8 {
+            width: 550px;
+            height: 550px;
+            top: 0%;
+            left: -10%;
+            animation-duration: 8s;
+        }
+
+        .circle9 {
+            width: 550px;
+            height: 550px;
+            top: 20%;
+            left: 75%;
+            animation-duration: 5s;
+        }
+
+        .circle10 {
+            width: 550px;
+            height: 550px;
+            top: 55%;
+            left: 5%;
+            animation-duration: 15s;
+        }
+
+        .circle11 {
+            width: 750px;
+            height: 750px;
+            top: 85%;
+            left: 40%;
+            animation-duration: 15s;
+        }
+
+        .circle12 {
+            width: 750px;
+            height: 750px;
+            top: 85%;
+            left: 75%;
+            animation-duration: 5s;
+        }
+
+        .circle13 {
+            width: 750px;
+            height: 750px;
+            top: -20%;
+            left: 40%;
+            animation-duration: 5s;
+        }
+
 
         @keyframes moveAura {
             0% {
@@ -113,4 +217,28 @@
         h5 {
             font-weight: bold;
             color: rgba(0, 0, 51, 0.788);
+        }
+
+        @media only screen and (max-width: 768px) {
+            .card {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                /* her telefonda tam ekran */
+            }
+
+            .my-3 {
+                flex: 1;
+                /* kalan alanı kapla */
+                overflow-y: auto;
+                /* liste uzarsa kaydırma çıksın */
+            }
+
+            .my-3 ul.list-group li {
+                padding: 12px;
+                font-size: 1rem;
+                word-wrap: break-word;
+                /* taşan yazıyı kır */
+            }
+
         }
