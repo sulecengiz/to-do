@@ -18,3 +18,5 @@ Günlük görevlerinizi kolayca yönetmenize yardımcı olur.
 - **HTML:** Uygulamanın iskelet yapısını oluşturmak için kullanıldı.  
 - **CSS:** Modern ve minimalist bir arayüz tasarımı için kullanıldı.  
 - **JavaScript:** Uygulamanın tüm dinamik işlevlerini (görev ekleme, silme, tamamlama vb.) yönetmek için kullanıldı.  
+
+  **Link: ** https://sulecengiz.github.io/to-do/
